@@ -12,12 +12,15 @@ html {
 
 body {
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 3rem;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
+  // min-height: 100vh;
+  // padding: 3rem;
+  display: grid;
+  grid-template-rows: [full-row-start] minmax(4rem, 1fr) repeat(4, [row-start] minmax(min-content, 13.75rem) [row-end]) minmax(4rem, 1fr) [full-row-end];
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];  
   background-image: url(../images/pattern-curve.svg);
   background-repeat: no-repeat;
   background-position: left bottom;
