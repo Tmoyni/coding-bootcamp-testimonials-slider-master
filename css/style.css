@@ -91,8 +91,7 @@ body {
   justify-content: space-between;
   align-items: center;
   justify-self: center;
-  transform: translate(4rem, -3rem);
-  z-index: 10; }
+  transform: translate(4rem, -3rem); }
 
 .testimonial__bg {
   grid-column: 5 / center-end;
@@ -100,10 +99,21 @@ body {
   justify-self: center; }
 
 button {
-  border: 0;
   background-color: white;
-  width: 6rem;
-  height: 6rem; }
+  width: 5.5rem;
+  height: 6rem;
+  cursor: pointer; }
+  button, button:link, button:visited {
+    transition: all .2s;
+    border: none;
+    cursor: pointer; }
+  button:hover {
+    transition: all .2s;
+    transform: translateY(-2px); }
+  button:active, button:focus {
+    transition: all .2s;
+    outline: none;
+    transform: translateY(2px); }
 
 .attribution {
   grid-row: footer-start;
