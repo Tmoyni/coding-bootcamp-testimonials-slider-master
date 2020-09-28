@@ -52,17 +52,20 @@
   }
 
   &__button-container {
-    width: 8rem;
-    height: 5rem;
+    width: 12rem;
+    height: 6rem;
     background-color: white;
-    border-radius: 10;
+    border-radius: 30rem;
+    // padding: 2rem;
+    overflow: hidden;
 
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     justify-self: center;  
-    transform: translate(4rem, -2.5rem);
+    transform: translate(4rem, -3rem);
     z-index: 10;
+  
 
   }
 
@@ -75,5 +78,7 @@
 
 button {
   border: 0;
-  
+  background-color: white;
+  width: 6rem;
+  height: 6rem;
 }
