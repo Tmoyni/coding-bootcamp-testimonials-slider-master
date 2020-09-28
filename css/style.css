@@ -33,6 +33,10 @@ body {
   background-image: url(../images/pattern-curve.svg);
   background-repeat: no-repeat;
   background-position: left bottom; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      grid-template-rows: [full-start] minmax(6rem, 1fr) [center-start] repeat(7, [row-start] minmax(min-content, 6rem) [row-end]) [center-end] minmax(6rem, 1fr) [footer-start] minmax(6rem, 1fr) [full-end];
+      grid-template-columns: [full-start] minmax(2rem, 4rem) [center-start] repeat(3, [col-start] minmax(min-content, 1fr) [col-end]) [center-end] minmax(2rem, 4rem) [full-end]; } }
 
 body {
   font-family: 'Inter', sans-serif;
@@ -48,6 +52,11 @@ body {
 .testimonial__quote-mark {
   grid-column: 3;
   grid-row: 4 / 7; }
+  @media only screen and (max-width: 56.25em) {
+    .testimonial__quote-mark {
+      grid-column: 3;
+      grid-row: 7;
+      justify-self: center; } }
 
 .testimonial__details {
   grid-column: center-start / 7;
@@ -56,6 +65,14 @@ body {
   flex-direction: column;
   align-items: left;
   z-index: 10; }
+  @media only screen and (max-width: 56.25em) {
+    .testimonial__details {
+      grid-column: 2 / -2;
+      grid-row: 7 / 9;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      z-index: 10; } }
 
 .testimonial__quote {
   margin-bottom: 3rem;
@@ -77,6 +94,13 @@ body {
   z-index: 5;
   display: flex;
   flex-direction: column; }
+  @media only screen and (max-width: 56.25em) {
+    .testimonial__img-container {
+      grid-column: 3 / -3;
+      grid-row: 3 / 4;
+      justify-self: center;
+      align-items: center;
+      width: 100%; } }
 
 .testimonial__img {
   border-radius: .5rem; }
@@ -92,11 +116,19 @@ body {
   align-items: center;
   justify-self: center;
   transform: translate(4rem, -3rem); }
+  @media only screen and (max-width: 56.25em) {
+    .testimonial__button-container {
+      transform: translate(0rem, -3rem); } }
 
 .testimonial__bg {
   grid-column: 5 / center-end;
   grid-row: center-start / center-end;
   justify-self: center; }
+  @media only screen and (max-width: 56.25em) {
+    .testimonial__bg {
+      grid-column: 2 / -2;
+      grid-row: 2 / 5;
+      justify-self: center; } }
 
 button {
   background-color: white;

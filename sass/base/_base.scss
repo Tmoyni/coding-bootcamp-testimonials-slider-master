@@ -18,4 +18,9 @@ body {
   background-image: url(../images/pattern-curve.svg);
   background-repeat: no-repeat;
   background-position: left bottom;
+
+  @include respond(tab-port) {
+    grid-template-rows: [full-start] minmax(6rem, 1fr) [center-start] repeat(7, [row-start] minmax(min-content, 6rem) [row-end]) [center-end] minmax(6rem, 1fr) [footer-start] minmax(6rem, 1fr) [full-end];;
+    grid-template-columns: [full-start] minmax(2rem, 4rem) [center-start] repeat(3, [col-start] minmax(min-content, 1fr) [col-end]) [center-end] minmax(2rem, 4rem) [full-end];  
+  }
 }
