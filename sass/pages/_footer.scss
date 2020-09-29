@@ -5,6 +5,10 @@
   margin-top: 2rem;
   font-size: 1.1rem; 
   text-align: center; 
+
+  @include respond(tab-port) {
+    margin-top: 0;
+  }
 }
 
 .attribution a { 

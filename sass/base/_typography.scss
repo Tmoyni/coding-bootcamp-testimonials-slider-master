@@ -1,8 +1,14 @@
 body {
   font-family: 'Inter', sans-serif;  
   font-weight: 300;
-  font-size: 3.2rem;
   color: $dark-blue;
+
+  font-size: 3.2rem;
   line-height: 4.2rem;
+
+  @include respond(tab-port) {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
 }
 
