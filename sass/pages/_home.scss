@@ -12,8 +12,9 @@
 
     @include respond(tab-port) {
       grid-column: 3;
-      grid-row: 6 / 8;
+      grid-row: 5 / 7;
       justify-self: center;
+      width: 20%;
     }
   }
 
@@ -27,7 +28,7 @@
 
     @include respond(tab-port) {
       grid-column: 2 / -2;
-      grid-row: 7 / 8;
+      grid-row: 6 / 7;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -47,11 +48,20 @@
   &__name {
     font-size: 2rem;
     font-weight: 700;
+
+    @include respond(tab-port) {
+    font-size: 1.6rem;
+    text-align: center;
+    }
   }
 
   &__job {
     font-weight: 500;
     color: $grayish-blue;
+
+    @include respond(tab-port) {
+      display: block
+    }
   }
 
   &__img-container {
@@ -94,7 +104,9 @@
     transform: translate(4rem, -3rem);
 
     @include respond(tab-port) {
-      transform: translate(0rem, -3rem);
+      width: 8rem;
+      height: 4rem;
+      transform: translate(0rem, -2rem);
     }
   }
 
@@ -109,7 +121,7 @@
 
     @include respond(tab-port) {
       grid-column: 2 / -2;
-      grid-row: 2 / 5;
+      grid-row: 2 / 4;
       justify-self: center; 
       background-image: url(../images/pattern-bg.svg);
       background-repeat: no-repeat;
@@ -123,6 +135,11 @@ button {
   width: 5.5rem;
   height: 6rem;        
   cursor: pointer;
+
+  @include respond(tab-port) {
+    width: 3.5rem;
+    height: 4rem;
+  }
 
     &,
     &:link,
@@ -143,4 +160,10 @@ button {
       outline: none;
       transform: translateY(2px);
     }
+}
+
+.arrow {
+  @include respond(tab-port) {
+
+  }
 }

@@ -22,7 +22,7 @@ body {
 
 
   @include respond(tab-port) {
-    grid-template-rows: [full-start] minmax(2rem, 4rem) [center-start] repeat(6, [row-start] minmax(min-content, 2rem) [row-end]) [center-end] minmax(2rem, 1fr) [footer-start] minmax(2rem, 4rem) [full-end];;
+    grid-template-rows: [full-start] minmax(2rem, 4rem) [center-start] repeat(5, [row-start] minmax(min-content, 2rem) [row-end]) [center-end] minmax(2rem, 1fr) [footer-start] minmax(2rem, 4rem) [full-end];;
     grid-template-columns: [full-start] minmax(1.5rem, 4rem) [center-start] repeat(3, [col-start] minmax(min-content, 4rem) [col-end]) [center-end] minmax(1.5rem, 4rem) [full-end];  
   }
 }
