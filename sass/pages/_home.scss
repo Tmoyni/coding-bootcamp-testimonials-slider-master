@@ -10,7 +10,7 @@
     grid-column: 3;
     grid-row: 4 / 7;
 
-    @include respond(tab-port) {
+    @include respond(phone) {
       grid-column: 3;
       grid-row: 6 / 8;
       justify-self: center;
@@ -26,7 +26,7 @@
     align-items: left;
     z-index: 10;
 
-    @include respond(tab-port) {
+    @include respond(phone) {
       grid-column: 2 / -2;
       grid-row: 7 / 8;
       display: flex;
@@ -40,7 +40,7 @@
     margin-bottom: 3rem;
     width: 100%;
 
-    @include respond(tab-port) {
+    @include respond(phone) {
       text-align: center;
     }
   }
@@ -49,7 +49,7 @@
     font-size: 2rem;
     font-weight: 700;
 
-    @include respond(tab-port) {
+    @include respond(phone) {
     font-size: 1.6rem;
     text-align: center;
     }
@@ -59,7 +59,7 @@
     font-weight: 500;
     color: $grayish-blue;
 
-    @include respond(tab-port) {
+    @include respond(phone) {
       display: block
     }
   }
@@ -73,7 +73,7 @@
     display: flex;
     flex-direction: column;
 
-    @include respond(tab-port) {
+    @include respond(phone) {
       grid-column: 3 / -3;
       grid-row: 3 / 4;
       justify-self: center;  
@@ -85,7 +85,7 @@
   &__img {
     border-radius: .5rem;
 
-    @include respond(tab-port) {
+    @include respond(phone) {
       width: 70vw;
     }
   }
@@ -107,12 +107,11 @@
     justify-self: center;  
     z-index: 25;
 
-
-    @include respond(tab-port) {
+    @include respond(phone) {
       width: 8rem;
       height: 4rem;
       grid-column: 3 / -3;
-      grid-row-end: 4 ;
+      grid-row: 3;
       transform: translate(0rem, 2rem);
       z-index: 25;
       align-self: end;
@@ -129,9 +128,9 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
-    @include respond(tab-port) {
+    @include respond(phone) {
       grid-column: 2 / -2;
-      grid-row: 2 / 4;
+      grid-row: 2 / 5;
       justify-self: center; 
       width: 100%;
       height: auto;
@@ -148,7 +147,7 @@ button {
   height: 6rem;        
   cursor: pointer;
 
-  @include respond(tab-port) {
+  @include respond(phone) {
     width: 3.5rem;
     height: 4rem;
   }
@@ -175,12 +174,6 @@ button {
       outline: none;
       transform: translateY(2px);
     }
-}
-
-.arrow {
-  @include respond(tab-port) {
-
-  }
 }
 
 .active {
